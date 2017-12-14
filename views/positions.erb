@@ -1,0 +1,9 @@
+<h1>League of Cool Kickball Professionals</h1>
+<h2>Positions:</h2>
+<ul>
+  <% @positions.each do |position| %>
+  <li>
+    <a href="/positions/<%= position %>"><%= position %></a>
+  </li>
+  <% end %>
+</ul>

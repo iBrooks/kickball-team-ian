@@ -1,0 +1,9 @@
+<h1>League of Cool Kickball Professionals</h1>
+<h2>Team List</h2>
+<ul>
+  <% @teamList.each do |team| %>
+  <li>
+    <a href="/teams/<%= team.name %>"> <%= team.name %> </a>
+  </li>
+  <% end %>
+</ul>

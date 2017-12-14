@@ -1,0 +1,9 @@
+<h1>League of Cool Kickball Professionals</h1>
+<h2><%= @position %></h2>
+<ul>
+  <% @players.each do |teamName, playerName| %>
+  <li>
+    <a href="/teams/<%= teamName %>"><%= "#{teamName}"%></a><%=": #{playerName}" %>
+  </li>
+  <% end %>
+</ul>
